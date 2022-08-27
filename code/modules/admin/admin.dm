@@ -1241,14 +1241,14 @@ var/global/floorIsLava = 0
 			H.paralysis = 8000
 			H.admin_paralyzed = TRUE
 			msg = "has paralyzed [key_name(H)]."
-			H.visible_message(SPAN_DEBUG("OOC: \The [H] has been paralyzed by a staff member. Please hold all interactions with them until staff have finished with them."))
-			to_chat(H, SPAN_DEBUG("OOC: You have been paralyzed by a staff member. Please refer to your currently open admin help ticket or, if you don't have one, admin help for assistance."))
+			H.visible_message(SPAN_DEBUG("OOC: Игрок [H] был парализован администрацией. Пожалуйста, воздержитесь от любых взаимодействий с ними, пока персонал не разберётся с ними."))
+			to_chat(H, SPAN_DEBUG("OOC: Вы были парализованы администрацией. Пожалуйста, обратитесь за помощью к текущему открытому тикету администратора или, если у вас его нет, к ассистенту."))
 		else
 			H.paralysis = 0
 			H.admin_paralyzed = FALSE
 			msg = "has unparalyzed [key_name(H)]."
-			H.visible_message(SPAN_DEBUG("OOC: \The [H] has been released from paralysis by staff. You may resume interactions with them."))
-			to_chat(H, SPAN_DEBUG("OOC: You have been released from paralysis by staff and can return to your game."))
+			H.visible_message(SPAN_DEBUG("OOC: Игрок [H] был освобожден от паралича администрацией. Вы можете возобновить взаимодействие с ним."))
+			to_chat(H, SPAN_DEBUG("OOC: Вас освободил от паралича администратор и вы можете вернуться к своей игре."))
 		log_and_message_staff(msg)
 
 
