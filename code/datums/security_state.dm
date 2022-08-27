@@ -275,5 +275,5 @@
 	var/static/datum/announcement/priority/security/security_announcement_delta = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/effects/siren.ogg'))
 
 /decl/security_level/default/code_delta/switching_up_to()
-	security_announcement_delta.Announce("Задействован механизм самоуничтожения. Всем членам экипажа приказано подчиняться всем указаниям руководителей. Любые нарушения этих приказов могут быть наказаны смертью. Это не учения.", "Внимание! Достигнут уровень безопасности Дельта!")
+	security_announcement_delta.Announce("Задействован механизм самоуничтожения. Всем членам персонала приказано подчиняться всем указаниям командующих. Любые нарушения этих приказов могут послужить причиной для устранения. Это не учения.", "Внимание! Достигнут код уровеня безопасности Дельта!")
 	notify_station()
