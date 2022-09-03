@@ -208,9 +208,10 @@ var/list/channel_to_radio_key = new
 	message = html_decode(message)
 
 	var/end_char = copytext_char(message, length(message), length(message) + 1)
+	/*
 	if(!(end_char in list(".", "?", "!", "-", "~", ":")))
 		message += "."
-
+	*/
 	return html_encode(message)
 
 /mob/living/say(var/message, var/datum/language/speaking = null, var/verb="says", var/alt_name="", whispering)
